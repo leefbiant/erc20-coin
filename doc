@@ -1,0 +1,22 @@
+nitial_migration.js
+======================
+
+Replacing 'Doge'
+----------------
+undefined
+⠋ Blocks: 0            Seconds: 0   > transaction hash:    0x17f5c0cbf571d1e35f674aa330c22c3638b43c3c30a60979bcdb015ddf05dff5
+⠴ Blocks: 0            Seconds: 0undefined
+> Blocks: 2            Seconds: 9
+> contract address:    0xFC4C60d7621e8fbaBd27674749e7407D0E100779
+> block number:        30873917
+> block timestamp:     1649300320
+> account:             0x3f9E93988a96a48B451E01CcF776C71Ce238970F
+> balance:             0.99089014797783737
+> gas used:            1583097 (0x1827f9)
+> gas price:           2.500000007 gwei
+> value sent:          0 ETH
+> total cost:          0.003957742511081679 ETH
+
+> Saving artifacts
+-------------------------------------
+> Total cost:     0.003957742511081679 ETH

@@ -23,6 +23,14 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
+var HDWalletProvider = require("truffle-hdwallet-provider");
+const result=require('dotenv').config(); // 默认读取项目根目录下的.env文件,用process.env.调用
+if (result.error) {
+  throw result.error;
+}
+console.log(result.parsed);
+
+
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -71,6 +79,12 @@ module.exports = {
     // network_id: 2111,   // This network is yours, in the cloud.
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
+    kovan: {
+      provider: function() {
+       return new HDWalletProvider(process.env.mnemonic, "https://kovan.infura.io/v3/"+ process.env.infurakey)
+      },
+      network_id: 42
+    }
   },
 
   // Set default mocha options here, use special reporters etc.
